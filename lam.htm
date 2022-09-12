@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Latin Keyboard Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+</head>
+<body>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+
+        @font-face {
+          font-family: "Font";
+          src: url("dihjauti.bold-webfont.woff");
+        }
+        :root {
+            font-family: "Font";
+            background-color: #860404;
+            color: gold;
+            text-align: center;
+        }
+        #Title {
+            font-size: 65px;
+            font-family: "Font";
+        }
+        #input {
+            border-radius: 15px;
+            background-color: #860404;
+            color: gold;
+            font-family: "Castoro";
+            font-size: 45px;
+            border: none;
+            border-color: #860404;
+        }
+      </style>  
+      <h1 id="Title">
+        Lingua Latina <h2><i>Nova</i></h2>
+      </h1>
+      <h2>Type Latin Online</h2>
+      <textarea id="input" cols="60" rows="5">...</textarea>
+      <script>
+          document.getElementById('input').addEventListener('keyup', function removeNewLines() {
+            var car;
+
+            car = this.value.replace(/oe/g, "œ");
+            car = car.replace(/OE/g, "Œ");
+            car = car.replace(/ae/g, "æ");
+            car = car.replace(/AE/g, "Æ");
+            car = car.replace(/'/g, "=");
+            car = car.replace(/a=/g, "ă");
+            car = car.replace(/ă=/g, "ā");
+            car = car.replace(/ā=/g, "a");
+            car = car.replace(/e=/g, "ĕ");
+            car = car.replace(/ĕ=/g, "ē");
+            car = car.replace(/ē=/g, "e");
+            car = car.replace(/i=/g, "ĭ");
+            car = car.replace(/ĭ=/g, "ī");
+            car = car.replace(/ī=/g, "i");
+            car = car.replace(/o=/g, "ŏ");
+            car = car.replace(/ŏ=/g, "ō");
+            car = car.replace(/ō=/g, "o");
+            car = car.replace(/u=/g, "ŭ");
+            car = car.replace(/ŭ=/g, "ū");
+            car = car.replace(/ū=/g, "u");
+            car = car.replace(/y=/g, "y̆");
+            car = car.replace(/y̆=/g, "ȳ");
+            car = car.replace(/ȳ=/g, "y");
+
+            car = car.replace(/A=/g, "Ă");
+            car = car.replace(/Ă=/g, "Ā");
+            car = car.replace(/Ā=/g, "A");
+            car = car.replace(/E=/g, "Ĕ");
+            car = car.replace(/Ĕ=/g, "Ē");
+            car = car.replace(/Ē=/g, "E");
+            car = car.replace(/I=/g, "Ĭ");
+            car = car.replace(/Ĭ=/g, "Ī");
+            car = car.replace(/Ī=/g, "I");
+            car = car.replace(/O=/g, "Ŏ");
+            car = car.replace(/Ŏ=/g, "Ō");
+            car = car.replace(/Ō=/g, "O");
+            car = car.replace(/U=/g, "Ŭ");
+            car = car.replace(/Ŭ=/g, "Ū");
+            car = car.replace(/Ū=/g, "U");
+            car = car.replace(/Y=/g, "Y̆");
+            car = car.replace(/Y̆=/g, "Ȳ");
+            car = car.replace(/Ȳ=/g, "Y");
+
+            this.value = car;
+          });
+      </script>
+      <h1>How to use this tool?</h1>
+      <h2>Just click on the three little dots, and press (Latin) letters on your keyboard. They will be automatically changed into their Katakana equivalent!</h2>
+      <h2>To add a dot above a letter, just press the Apostrophe. And for three dots, press the apostrophe two times.</h2>
+</body>
+</html>

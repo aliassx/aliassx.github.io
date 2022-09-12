@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persian Keyboard Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+</head>
+<body>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+        @font-face {
+          font-family: "Allura";
+          src: url("allura-regular-webfont.woff");
+        }
+        :root {
+            font-family: "Great Vibes";
+            background-color: #009a00;
+            color: white;
+            text-align: center;
+        }
+        #Title {
+            font-size: 65px;
+            font-family: "Great Vibes";
+        }
+        #input {
+            border-radius: 15px;
+            background-color: #009a00;
+            color: white;
+            font-family: "Great Vibes";
+            font-size: 45px;
+            font-weight: bold;
+            border: none;
+            border-color: #009a00;
+        }
+      </style>  
+      <h1 id="Title">
+        Esperanto
+      </h1>
+      <h2>Type Esperanto Online</h2>
+      <textarea id="input" cols="60" rows="5">...</textarea>
+      <script>
+          document.getElementById('input').addEventListener('keyup', function removeNewLines() {
+            var car;
+
+            car = this.value.replace(/\s/gm, ' ');
+            car = car.replace(/ch/g, "ĉ");
+            car = car.replace(/cx/g, "ĉ");
+            car = car.replace(/sh/g, "ŝ");
+            car = car.replace(/sx/g, "ŝ");
+            car = car.replace(/gh/g, "ĝ");
+            car = car.replace(/gx/g, "ĝ");
+            car = car.replace(/jh/g, "ĵ");
+            car = car.replace(/jx/g, "ĵ");
+            car = car.replace(/hh/g, "ĥ");
+            car = car.replace(/hx/g, "ĥ");
+            car = car.replace(/CH/g, "Ĉ");
+            car = car.replace(/CX/g, "Ĉ");
+            car = car.replace(/SH/g, "Ŝ");
+            car = car.replace(/SX/g, "Ŝ");
+            car = car.replace(/GH/g, "Ĝ");
+            car = car.replace(/GX/g, "Ĝ");
+            car = car.replace(/JH/g, "Ĵ");
+            car = car.replace(/JX/g, "Ĵ");
+            car = car.replace(/HH/g, "Ĥ");
+            car = car.replace(/HX/g, "Ĥ");
+            car = car.replace(/Ch/g, "Ĉ");
+            car = car.replace(/Cx/g, "Ĉ");
+            car = car.replace(/Sh/g, "Ŝ");
+            car = car.replace(/Sx/g, "Ŝ");
+            car = car.replace(/Gh/g, "Ĝ");
+            car = car.replace(/Gx/g, "Ĝ");
+            car = car.replace(/Jh/g, "Ĵ");
+            car = car.replace(/Jx/g, "Ĵ");
+            car = car.replace(/Hh/g, "Ĥ");
+            car = car.replace(/Hx/g, "Ĥ");
+
+            car = car.replace(/\//g, "\u200b");
+
+            this.value = car;
+          });
+      </script>
+      <h1>How to use this tool?</h1>
+      <h2>Just click on the three little dots, and press (Latin) letters on your keyboard. They will be automatically changed into their Katakana equivalent!</h2>
+      <h2>To add a dot above a letter, just press the Apostrophe. And for three dots, press the apostrophe two times.</h2>
+</body>
+</html>

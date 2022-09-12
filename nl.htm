@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Latin Keyboard Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+</head>
+<body>
+      <style>
+        @font-face {
+          font-family: "Cinzel";
+          src: url("milkshake-webfont.woff");
+        }
+        :root {
+            font-family: "Cinzel";
+            background-color: #7788bb;
+            color: whitesmoke;
+            text-align: center;
+        }
+        #Title {
+            font-size: 65px;
+            font-family: "Cinzel";
+        }
+        #input {
+            border-radius: 15px;
+            background-color: #7788bb;
+            color: whitesmoke;
+            font-family: "Cinzel";
+            font-size: 45px;
+            border-color: #7788bb;
+        }
+      </style>  
+      <h1 id="Title">Nederlands</h1>
+      <h2>Type Latin Online</h2>
+      <textarea id="input" cols="60" rows="5">...</textarea>
+      <script>
+          document.getElementById('input').addEventListener('keyup', function removeNewLines() {
+            var car;
+
+            car = this.value.replace(/e'/g, 'é');
+            car = car.replace(/e=/g, "ë");
+            car = car.replace(/E'/g, "É");
+            car = car.replace(/E=/g, "Ë");
+            this.value = car;
+          });
+      </script>
+      <h1>How to use this tool?</h1>
+      <h2>Just click on the three little dots, and press Latin letters on your keyboard. They will be automatically changed into their Dutch equivalent!</h2>
+      <h2>To add a dot above a letter, just press the Apostrophe. And for three dots, press the apostrophe two times.</h2>
+</body>
+</html>
